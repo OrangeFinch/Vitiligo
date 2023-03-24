@@ -19,3 +19,5 @@ exprSet = t(sapply(split(tab[,1], tab[,4]), function(ids){
 }))
 # Check out all our conditions
 C_name <- colnames(exprSet)
+
+write.table(exprSet, file = "exprSet.csv", sep = " ", eol = "\n",  col.names = TRUE) 
